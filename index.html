@@ -1,0 +1,422 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-black text-white overflow-x-hidden">
+
+    <!-- BACKGROUND -->
+    <div class="fixed inset-0 -z-10 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black"></div>
+
+    <div class="fixed top-0 left-0 w-80 h-80 bg-cyan-400/40 rounded-full blur-3xl -z-10 animate-pulse"></div>
+    <div class="fixed bottom-0 right-0 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl -z-10 animate-pulse"></div>
+
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            
+            <h1 class="text-lg sm:text-xl md:text-2xl font-bold tracking-wide text-white">
+                Samuel.dev
+            </h1>
+
+            <ul class="hidden md:flex gap-8 text-sm font-medium text-zinc-300">
+                <li>
+                    <a href="#home" class="hover:text-cyan-400 transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projetos" class="hover:text-cyan-400 transition duration-300">
+                        Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato" class="hover:text-cyan-400 transition duration-300">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <!-- TEXTO -->
+            <div class="space-y-6 text-center md:text-left">
+                
+                <span class="inline-block px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-sm">
+                    Desenvolvedor Full Stack
+                </span>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                    Criando experiências digitais modernas e inteligentes.
+                </h2>
+
+                <p class="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Desenvolvedor apaixonado por tecnologia, interfaces modernas,
+                    APIs e soluções inteligentes para web.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    
+                    <a href="#projetos"
+                        class="px-8 py-4 rounded-2xl bg-cyan-400 hover:bg-cyan-300 text-black font-semibold transition duration-300 hover:scale-110 hover:-translate-y-1 shadow-2xl shadow-cyan-400/50">
+                        Ver Projetos
+                    </a>
+
+                    <a href="#contato"
+                        class="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-md transition duration-300 hover:scale-105">
+                        Entrar em Contato
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- FOTO -->
+            <div class="flex justify-center">
+                
+                <div class="relative group">
+                    
+                    <div class="absolute inset-0 bg-cyan-500/30 blur-3xl rounded-full group-hover:bg-purple-500/30 transition duration-500"></div>
+
+                    <!-- COLOQUE SUA FOTO AQUI -->
+                    <img
+                        src="eu.jpeg"
+                        alt="Foto de Perfil"
+                        class="relative w-52 h-52 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border border-white/10 shadow-2xl hover:scale-105 transition duration-500"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+        <!-- BACKGROUND COLORIDO -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-cyan-400/20 blur-3xl rounded-full"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-pink-500/20 blur-3xl rounded-full"></div>
+        <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-purple-500/20 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+
+            <!-- TITULO -->
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 rounded-full bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 text-sm mb-4">
+                    Minha História 🌎
+                </span>
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Do interior para o mundo da tecnologia 🚀
+                </h2>
+
+                <p class="text-zinc-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+                    Cresci no interior de Minas Gerais, aprendendo o valor da simplicidade,
+                    da paciência e da dedicação. Hoje transformo criatividade e curiosidade
+                    em projetos modernos e experiências digitais.
+                </p>
+            </div>
+
+
+            <!-- GRID DE FOTOS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- FOTO 1 -->
+                <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:-translate-y-2 transition duration-500 shadow-2xl">
+
+                    <!-- COLOQUE SUA FOTO DO INTERIOR AQUI -->
+                    <img
+                        src="https://placehold.co/600x700"
+                        alt="Foto Interior"
+                        class="w-full h-[400px] object-cover group-hover:scale-110 transition duration-700"
+                    />
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-cyan-300">
+                            Minha Origem 🌿
+                        </h3>
+
+                        <p class="text-zinc-200 text-sm leading-relaxed">
+                            Um pouco das minhas raízes, lugares e momentos especiais do interior.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- FOTO 2 -->
+                <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:-translate-y-2 transition duration-500 shadow-2xl">
+
+                    <!-- COLOQUE SUA FOTO AQUI -->
+                    <img
+                        src="https://placehold.co/600x700"
+                        alt="Foto Natureza"
+                        class="w-full h-[400px] object-cover group-hover:scale-110 transition duration-700"
+                    />
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-pink-300">
+                            Energia & Alegria ⚡
+                        </h3>
+
+                        <p class="text-zinc-200 text-sm leading-relaxed">
+                            A animação e a motivação que levo para minha vida e meus projetos.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- FOTO 3 -->
+                <div class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:-translate-y-2 transition duration-500 shadow-2xl">
+
+                    <!-- COLOQUE SUA FOTO AQUI -->
+                    <img
+                        src="https://placehold.co/600x700"
+                        alt="Foto Tecnologia"
+                        class="w-full h-[400px] object-cover group-hover:scale-110 transition duration-700"
+                    />
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                    <div class="absolute bottom-0 p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-purple-300">
+                            Tecnologia 💻
+                        </h3>
+
+                        <p class="text-zinc-200 text-sm leading-relaxed">
+                            Minha evolução como desenvolvedor e apaixonado por programação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- BLOCO EXTRA -->
+            <div class="mt-20 grid md:grid-cols-2 gap-8 items-center">
+
+                <div class="space-y-6">
+                    <h3 class="text-3xl sm:text-4xl font-bold leading-tight">
+                        Cada passo da minha jornada construiu quem eu sou hoje.
+                    </h3>
+
+                    <p class="text-zinc-300 leading-relaxed text-base sm:text-lg">
+                        O interior me ensinou a observar detalhes, ter calma para resolver problemas
+                        e valorizar cada conquista. Hoje aplico tudo isso no desenvolvimento de sistemas,
+                        interfaces modernas e soluções criativas.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-500/10 via-purple-500/10 to-pink-500/10 border border-white/10 rounded-3xl p-8 backdrop-blur-xl shadow-2xl hover:scale-[1.02] transition duration-500">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-4 h-4 rounded-full bg-cyan-400 animate-pulse"></div>
+                            <p class="text-zinc-200">Criatividade em constante evolução</p>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-4 h-4 rounded-full bg-pink-400 animate-pulse"></div>
+                            <p class="text-zinc-200">Paixão por tecnologia e design moderno</p>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-4 h-4 rounded-full bg-purple-400 animate-pulse"></div>
+                            <p class="text-zinc-200">Determinação para crescer todos os dias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">
+                    Meus Projetos
+                </h2>
+
+                <p class="text-zinc-400 max-w-2xl mx-auto">
+                    Alguns projetos desenvolvidos com foco em design moderno,
+                    lógica de programação e experiência do usuário.
+                </p>
+            </div>
+
+
+            <!-- GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                <!-- CARD 1 -->
+                <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 hover:border-cyan-400/40 transition duration-500 shadow-lg">
+
+                    <!-- COLOQUE A IMAGEM DO PROJETO AQUI -->
+                    <img
+                        src="https://placehold.co/600x400"
+                        alt="Projeto 1"
+                        class="w-full h-52 object-cover"
+                    />
+
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-semibold">
+                            Sistema de Monitoramento
+                        </h3>
+
+                        <p class="text-zinc-400 leading-relaxed">
+                            Projeto desenvolvido para análise de velocidade,
+                            infrações e segurança de motoristas.
+                        </p>
+
+                        <button class="px-5 py-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 hover:bg-cyan-500 hover:text-black transition duration-300">
+                            Ver Mais
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 hover:border-purple-400/40 transition duration-500 shadow-lg">
+
+                    <!-- COLOQUE A IMAGEM DO PROJETO AQUI -->
+                    <img
+                        src="https://placehold.co/600x400"
+                        alt="Projeto 2"
+                        class="w-full h-52 object-cover"
+                    />
+
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-semibold">
+                            Calculadora Inteligente
+                        </h3>
+
+                        <p class="text-zinc-400 leading-relaxed">
+                            Sistema desenvolvido utilizando estruturas de decisão,
+                            validação de entrada e operações matemáticas.
+                        </p>
+
+                        <button class="px-5 py-3 rounded-xl bg-purple-500/10 border border-purple-500/20 hover:bg-purple-500 hover:text-white transition duration-300">
+                            Ver Mais
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 hover:border-pink-400/40 transition duration-500 shadow-lg">
+
+                    <!-- COLOQUE A IMAGEM DO PROJETO AQUI -->
+                    <img
+                        src="https://placehold.co/600x400"
+                        alt="Projeto 3"
+                        class="w-full h-52 object-cover"
+                    />
+
+                    <div class="p-6 space-y-4">
+                        <h3 class="text-2xl font-semibold">
+                            Simulador de Auto Escola
+                        </h3>
+
+                        <p class="text-zinc-400 leading-relaxed">
+                            Jogo interativo criado em Python para simular decisões
+                            no trânsito com sistema de pontuação.
+                        </p>
+
+                        <button class="px-5 py-3 rounded-xl bg-pink-500/10 border border-pink-500/20 hover:bg-pink-500 hover:text-white transition duration-300">
+                            Ver Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="contato" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-white/10 bg-white/5 backdrop-blur-md">
+
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+
+            <h2 class="text-3xl font-bold">
+                Vamos nos conectar 🚀
+            </h2>
+
+            <p class="text-zinc-400 max-w-xl mx-auto">
+                Entre em contato pelas redes sociais ou visite meu GitHub
+                para conhecer mais projetos.
+            </p>
+
+
+            <!-- REDES SOCIAIS -->
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-xl sm:text-2xl">
+
+                <!-- COLOQUE SEU LINK DO GITHUB AQUI -->
+                <a href="https://github.com/"
+                    target="_blank"
+                    class="group w-16 h-16 rounded-2xl bg-cyan-400 text-black flex items-center justify-center hover:scale-125 hover:rotate-12 transition-all duration-500 shadow-2xl shadow-cyan-400/60 relative overflow-hidden before:absolute before:inset-0 before:bg-white/20 before:translate-x-\[-100%\] hover:before:translate-x-\[100%\] before:transition-transform before:duration-700">
+                    <i class="fab fa-github group-hover:animate-bounce"></i>
+                </a>
+
+
+                <!-- COLOQUE SEU LINK DO LINKEDIN AQUI -->
+                <a href="#"
+                    target="_blank"
+                    class="group w-16 h-16 rounded-2xl bg-white/10 border border-cyan-400/20 flex items-center justify-center hover:bg-blue-500 hover:scale-125 hover:-translate-y-2 transition-all duration-500 shadow-lg hover:shadow-blue-500/50 relative overflow-hidden before:absolute before:inset-0 before:bg-white/10 before:translate-x-\[-100%\] hover:before:translate-x-\[100%\] before:transition-transform before:duration-700">
+                    <i class="fab fa-linkedin-in group-hover:animate-bounce"></i>
+                </a>
+
+
+                <!-- COLOQUE SEU LINK DO INSTAGRAM AQUI -->
+                <a href="#"
+                    target="_blank"
+                    class="group w-16 h-16 rounded-2xl bg-white/10 border border-cyan-400/20 flex items-center justify-center hover:bg-pink-500 hover:scale-125 hover:-translate-y-2 transition-all duration-500 shadow-lg hover:shadow-pink-500/50 relative overflow-hidden before:absolute before:inset-0 before:bg-white/10 before:translate-x-\[-100%\] hover:before:translate-x-\[100%\] before:transition-transform before:duration-700">
+                    <i class="fab fa-instagram group-hover:animate-bounce"></i>
+                </a>
+            </div>
+
+            <p class="text-zinc-500 text-sm pt-8">
+                © 2026 Samuel.dev — Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
